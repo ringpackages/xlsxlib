@@ -343,7 +343,7 @@ ok
 # Demo 12: Comprehensive Report
 ? "Demo 12: Creating comprehensive sales report..."
 excel = new ExcelWriter()
-excel.setTitle("Sales Report 2024")
+excel.setTitle("Sales Report 2025")
 excel.setAuthor("Sales Department")
 excel.setCompany("ABC Corporation")
 
@@ -355,7 +355,7 @@ headerStyle = excel.createHeaderStyle()
 currencyStyle = excel.createStyle([:align = "right"])
 totalStyle = excel.createStyle([:bold = true, :bgColor = "E2EFDA"])
 
-excel.setCellWithStyle(1, 1, "Annual Sales Report 2024", titleStyle)
+excel.setCellWithStyle(1, 1, "Annual Sales Report 2025", titleStyle)
 excel.mergeCells(1, 1, 1, 4)
 
 excel.setCellWithStyle(3, 1, "Quarter", headerStyle)
