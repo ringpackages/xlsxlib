@@ -132,7 +132,7 @@ Creates a new Excel workbook.
 **Example:**
 ```ring
 excel.setAuthor("John Doe")
-excel.setTitle("Sales Report 2024")
+excel.setTitle("Sales Report 2025")
 excel.setCompany("ABC Corporation")
 ```
 
@@ -175,7 +175,7 @@ excel.setCell(1, 2, 42)              # Number
 excel.setCell(1, 3, 3.14159)         # Decimal
 excel.setFormula(1, 4, "A1&B1")      # Formula (without =)
 excel.setFormula(2, 1, "SUM(A1:C1)") # Sum formula
-excel.setDate(3, 1, 2024, 12, 25)    # Date
+excel.setDate(3, 1, 2025, 12, 25)    # Date
 ```
 
 ---
