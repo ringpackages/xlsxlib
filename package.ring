@@ -21,22 +21,20 @@ aPackageInfo = [
 		]
 	],
 	:files = 	[
-		"lib.ring",
 		"main.ring",
+		"README.md"
+	],
+	:ringfolderfiles = 	[
 		"bin/load/xlsxlib.ring",
 		"libraries/xlsxlib/lib/constants.rh",
 		"libraries/xlsxlib/lib/excelwriter.ring",
 		"libraries/xlsxlib/lib/functions.ring",
 		"libraries/xlsxlib/lib/loadfiles.ring",
 		"libraries/xlsxlib/xlsxlib.ring",
-		"README.md",
 		"samples/UsingXLSXLib/demo_general.ring",
 		"samples/UsingXLSXLib/images/test1.png",
 		"samples/UsingXLSXLib/images/test2.jpg",
 		"samples/UsingXLSXLib/images/test3.bmp"
-	],
-	:ringfolderfiles = 	[
-
 	],
 	:windowsfiles = 	[
 
