@@ -1,0 +1,35 @@
+/*
+    XLSXLib - Excel Library for Ring Programming Language
+*/
+
+# ============================================================================
+# Constants
+# ============================================================================
+
+EXCEL_ALIGN_LEFT    = "left"
+EXCEL_ALIGN_CENTER  = "center"
+EXCEL_ALIGN_RIGHT   = "right"
+EXCEL_ALIGN_TOP     = "top"
+EXCEL_ALIGN_MIDDLE  = "center"
+EXCEL_ALIGN_BOTTOM  = "bottom"
+
+# Border styles
+EXCEL_BORDER_THIN   = "thin"
+EXCEL_BORDER_MEDIUM = "medium"
+EXCEL_BORDER_THICK  = "thick"
+EXCEL_BORDER_DOUBLE = "double"
+EXCEL_BORDER_DASHED = "dashed"
+EXCEL_BORDER_DOTTED = "dotted"
+
+# Number formats
+EXCEL_FORMAT_GENERAL    = 0
+EXCEL_FORMAT_NUMBER     = 1
+EXCEL_FORMAT_CURRENCY   = 164
+EXCEL_FORMAT_PERCENTAGE = 10
+EXCEL_FORMAT_DATE       = 14
+EXCEL_FORMAT_TIME       = 21
+EXCEL_FORMAT_DATETIME   = 22
+
+# CRC32 lookup table for ZIP creation (global, initialized on first use)
+aExcelZipCRC32Table = []
+
