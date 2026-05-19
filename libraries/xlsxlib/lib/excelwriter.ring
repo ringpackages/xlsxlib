@@ -90,8 +90,7 @@ class ExcelWriter
             :mergedCells = [],
             :autoFilter = NULL,
             :freezePane = NULL,
-            :images = [],
-            :printSettings = NULL
+            :images = []
         ]
         aSheets + sheet
         nCurrentSheet = len(aSheets)
@@ -448,29 +447,7 @@ class ExcelWriter
     
     func addImageCentered imagePath, row, col, width, height
         return addImage(imagePath, row, col, width, height)
-    
-    # ========================================================================
-    # Print Settings
-    # ========================================================================
-    
-    func setPrintArea row1, col1, row2, col2
-        if nCurrentSheet = 0 return self ok
-        aSheets[nCurrentSheet][:printSettings] = [
-            :area = [row1, col1, row2, col2],
-            :orientation = "portrait",
-            :fitToPage = false
-        ]
-        return self
-    
-    func setLandscape
-        if nCurrentSheet = 0 return self ok
-        if aSheets[nCurrentSheet][:printSettings] = NULL
-            aSheets[nCurrentSheet][:printSettings] = [:orientation = "landscape"]
-        else
-            aSheets[nCurrentSheet][:printSettings][:orientation] = "landscape"
-        ok
-        return self
-       
+          
     # ========================================================================
     # Save Document
     # ========================================================================
