@@ -91,8 +91,7 @@ class ExcelWriter
             :autoFilter = NULL,
             :freezePane = NULL,
             :images = [],
-            :printSettings = NULL,
-            :protection = NULL
+            :printSettings = NULL
         ]
         aSheets + sheet
         nCurrentSheet = len(aSheets)
@@ -471,16 +470,7 @@ class ExcelWriter
             aSheets[nCurrentSheet][:printSettings][:orientation] = "landscape"
         ok
         return self
-    
-    # ========================================================================
-    # Sheet Protection
-    # ========================================================================
-    
-    func protectSheet password
-        if nCurrentSheet = 0 return self ok
-        aSheets[nCurrentSheet][:protection] = [:password = password]
-        return self
-    
+       
     # ========================================================================
     # Save Document
     # ========================================================================
