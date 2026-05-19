@@ -16,8 +16,6 @@ XLSXLib is a library for creating Microsoft Excel (.xlsx) files using the Ring p
 - **Freeze Panes** - Keep headers visible while scrolling
 - **Images** - Embed PNG, JPG, BMP, and GIF images
 - **Formulas** - Full Excel formula support
-- **Print Settings** - Configure print areas and orientation
-- **Sheet Protection** - Password-protect worksheets
 - **No Dependencies** - Pure Ring implementation, no external libraries
 
 ## Table of Contents
@@ -39,8 +37,6 @@ XLSXLib is a library for creating Microsoft Excel (.xlsx) files using the Ring p
   - [Auto Filter](#auto-filter)
   - [Freeze Panes](#freeze-panes)
   - [Images](#images)
-  - [Print Settings](#print-settings)
-  - [Sheet Protection](#sheet-protection)
   - [Saving](#saving)
 - [Quick Functions](#quick-functions)
 - [Constants](#constants)
@@ -365,23 +361,6 @@ excel.addImage("chart.jpg", 10, 1, 8, 6)    # A10, 8x6 cells
 ```
 
 **Supported Formats:** PNG, JPG, JPEG, BMP, GIF
-
----
-
-### Print Settings
-
-| Method | Description |
-|--------|-------------|
-| `setPrintArea(row1, col1, row2, col2)` | Set print area |
-| `setLandscape()` | Set landscape orientation |
-
----
-
-### Sheet Protection
-
-```ring
-excel.protectSheet(password)
-```
 
 ---
 
