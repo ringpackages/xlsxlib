@@ -20,6 +20,34 @@ XLSXLib is a professional library for creating Microsoft Excel (.xlsx) files usi
 - **Sheet Protection** - Password-protect worksheets
 - **No Dependencies** - Pure Ring implementation, no external libraries
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+  - [Simple Spreadsheet](#simple-spreadsheet)
+  - [Quick Export Function](#quick-export-function)
+  - [Using Styles](#using-styles)
+- [API Reference](#api-reference)
+  - [ExcelWriter Class](#excelwriter-class)
+  - [Document Properties](#document-properties)
+  - [Sheet Management](#sheet-management)
+  - [Cell Operations](#cell-operations)
+  - [Bulk Data Operations](#bulk-data-operations)
+  - [Styling](#styling)
+  - [Column and Row Formatting](#column-and-row-formatting)
+  - [Merged Cells](#merged-cells)
+  - [Auto Filter](#auto-filter)
+  - [Freeze Panes](#freeze-panes)
+  - [Images](#images)
+  - [Print Settings](#print-settings)
+  - [Sheet Protection](#sheet-protection)
+  - [Saving](#saving)
+- [Quick Functions](#quick-functions)
+- [Constants](#constants)
+- [Color Reference](#color-reference)
+
+---
+
 ## Installation
 
 	ringpm install xlsxlib from ringpackages
