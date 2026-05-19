@@ -529,7 +529,7 @@ class ExcelWriter
         result = createZip(tempDir, filename)
         
         # Clean up temp directory
-        if excelIsWindows()
+        if isWindows()
             system('rmdir /s /q "' + tempDir + '" 2>nul')
         else
             system("rm -rf '" + tempDir + "'")
