@@ -2,11 +2,11 @@
 
 ## Overview
 
-XLSXLib is a professional library for creating Microsoft Excel (.xlsx) files using the Ring programming language. It generates fully compatible Office Open XML (ECMA-376) files that can be opened in Microsoft Excel, LibreOffice Calc, Google Sheets, and other spreadsheet applications.
+XLSXLib is a library for creating Microsoft Excel (.xlsx) files using the Ring programming language. It generates fully compatible Office Open XML (ECMA-376) files that can be opened in Microsoft Excel, LibreOffice Calc, Google Sheets, and other spreadsheet applications.
 
 ## Features
 
-- **Multiple Worksheets** - Create workbooks with unlimited sheets
+- **Multiple Worksheets** - Create workbooks with many sheets
 - **Cell Operations** - Set text, numbers, dates, and formulas
 - **Styling** - Fonts, colors, backgrounds, borders, alignment
 - **Number Formats** - Currency, percentage, date, time, custom formats
