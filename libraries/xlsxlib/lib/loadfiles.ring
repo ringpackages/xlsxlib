@@ -2,6 +2,6 @@
     XLSXLib - Load Files
 */
 
-load "constants.rh"
+load again "constants.rh"
 load "functions.ring"
 load "excelwriter.ring"
