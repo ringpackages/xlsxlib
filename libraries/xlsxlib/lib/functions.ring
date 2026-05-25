@@ -97,34 +97,12 @@ func excelColorToHex color
     # Convert color name to hex
     # Safety check
     if color = NULL return "000000" ok
-    if !isString(color) 
-        color = "" + color
-    ok
+    color = "" + color
     
     color = lower(color)
-    colors = [
-        :black = "000000",
-        :white = "FFFFFF",
-        :red = "FF0000",
-        :green = "00FF00",
-        :blue = "0000FF",
-        :yellow = "FFFF00",
-        :orange = "FFA500",
-        :purple = "800080",
-        :gray = "808080",
-        :grey = "808080",
-        :navy = "000080",
-        :teal = "008080",
-        :maroon = "800000",
-        :silver = "C0C0C0",
-        :lime = "00FF00",
-        :aqua = "00FFFF",
-        :fuchsia = "FF00FF",
-        :olive = "808000"
-    ]
     
-    if colors[color] != NULL
-        return colors[color]
+    if aCommonColors[color] != NULL
+        return aCommonColors[color]
     ok
     
     # Remove # if present
